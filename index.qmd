@@ -21,6 +21,10 @@ Miguel Ángel Chávez Arreola 2408845d@umich.mx
 Adair Chávez Servín 2408824@umich.mx
 Yoshua Anaya Bedolla 2408848x@umich.mx
 
+## 📄 Descargar PDF
+
+[Haz clic aquí para descargar el PDF](interesCompuestoEquipo5.pdf)
+
 # Función de Interés Compuesto
 
 ## Versión R

@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.8.26" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-
-<meta name="author" content="Alessandro Zavala Solis" />
+<meta name="author" content="Alessandro Zavala Solis">
 
 <title>Interés Compuesto - Equipo 5 – Mi sitio web</title>
 <style>
@@ -25,7 +23,25 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -57,27 +73,25 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="/index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Mi sitio web</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
-  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Inicio</span></a>
   </li>  
 </ul>
@@ -92,7 +106,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#universidad-michoacana-de-san-nicolás-de-hidalgo" id="toc-universidad-michoacana-de-san-nicolás-de-hidalgo" class="nav-link active" data-scroll-target="#universidad-michoacana-de-san-nicolás-de-hidalgo">Universidad Michoacana de San Nicolás de Hidalgo</a></li>
+  <li><a href="#integrantes" id="toc-integrantes" class="nav-link" data-scroll-target="#integrantes">Integrantes</a></li>
+  <li><a href="#descargar-pdf" id="toc-descargar-pdf" class="nav-link" data-scroll-target="#descargar-pdf">📄 Descargar PDF</a></li>
+  <li><a href="#función-de-interés-compuesto" id="toc-función-de-interés-compuesto" class="nav-link" data-scroll-target="#función-de-interés-compuesto">Función de Interés Compuesto</a>
+  <ul class="collapse">
+  <li><a href="#versión-r" id="toc-versión-r" class="nav-link" data-scroll-target="#versión-r">Versión R</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -121,44 +147,37 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#universidad-michoacana-de-san-nicolás-de-hidalgo" id="toc-universidad-michoacana-de-san-nicolás-de-hidalgo">Universidad Michoacana de San Nicolás de Hidalgo</a></li>
-  <li><a href="#integrantes" id="toc-integrantes">Integrantes</a></li>
-  <li><a href="#función-de-interés-compuesto" id="toc-función-de-interés-compuesto">Función de Interés Compuesto</a>
-  <ul>
-  <li><a href="#versión-r" id="toc-versión-r">Versión R</a></li>
-  </ul></li>
-  </ul>
-</nav>
+
 <section id="universidad-michoacana-de-san-nicolás-de-hidalgo" class="level2">
-<h2>Universidad Michoacana de San Nicolás de Hidalgo</h2>
+<h2 class="anchored" data-anchor-id="universidad-michoacana-de-san-nicolás-de-hidalgo">Universidad Michoacana de San Nicolás de Hidalgo</h2>
 <p><strong>Licenciatura:</strong> Actuaría y Ciencia de Datos</p>
 </section>
 <section id="integrantes" class="level2">
-<h2>Integrantes</h2>
+<h2 class="anchored" data-anchor-id="integrantes">Integrantes</h2>
 <p>Alessandro Zavala Solis 2122013h@umich.mx Miguel Ángel Chávez Arreola 2408845d@umich.mx Ángel Gabriel Ramos Mendoza 2123262e@umich.mx Adair Chávez Servín 2408824@umich.mx Yoshua Anaya Bedolla 2408848x@umich.mx</p>
+</section>
+<section id="descargar-pdf" class="level2">
+<h2 class="anchored" data-anchor-id="descargar-pdf">📄 Descargar PDF</h2>
+<p><a href="interesCompuestoEquipo5.pdf">Haz clic aquí para descargar el PDF</a></p>
 </section>
 <section id="función-de-interés-compuesto" class="level1">
 <h1>Función de Interés Compuesto</h1>
 <section id="versión-r" class="level2">
-<h2>Versión R</h2>
+<h2 class="anchored" data-anchor-id="versión-r">Versión R</h2>
 <p>La función permite calcular cualquiera de las siguientes variables según cuál falte:</p>
 <ul>
-<li>Valor actual (<strong>va</strong>)<br />
+<li>Valor actual (<strong>va</strong>)<br>
 </li>
-<li>Valor futuro (<strong>vf</strong>)<br />
+<li>Valor futuro (<strong>vf</strong>)<br>
 </li>
-<li>Tasa del periodo (<strong>r</strong>)<br />
+<li>Tasa del periodo (<strong>r</strong>)<br>
 </li>
 <li>Número de periodos (<strong>n</strong>)</li>
 </ul>
 <p>interesCompuesto = function(va = NULL, vf = NULL, r = NULL, n = NULL) { # Contar cuántos parámetros son NULL (faltantes) parametros_faltantes = sum(sapply(list(va, vf, r, n), is.null))</p>
 <pre><code># Validar que falte exactamente 1 parámetro
 if (parametros_faltantes != 1) {
-    return(&quot;Error: Debes proporcionar exactamente 3 de los 4 parámetros&quot;)
+    return("Error: Debes proporcionar exactamente 3 de los 4 parámetros")
 }
 
 # Calcular valor futuro
@@ -185,17 +204,13 @@ if (is.null(n)) {
     return(round(resultado, 2))
 }</code></pre>
 <p>}</p>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Mi sitio web</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Mi sitio web</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SW5pY2lv">Inicio</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span></p>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Interés Compuesto - Equipo 5 – Mi sitio web</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Interés Compuesto - Equipo 5 – Mi sitio web</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Interés Compuesto - Equipo 5 – Mi sitio web</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Mi sitio web</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw=="></span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj"></span></p>
-</div>
+
+
 </section>
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -597,6 +612,7 @@ if (is.null(n)) {
   </script>
 </div> <!-- /content -->
 
-</body>
 
-</html>
+
+
+</body></html>

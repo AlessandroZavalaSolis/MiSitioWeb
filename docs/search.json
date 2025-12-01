@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Interés Compuesto - Equipo 5",
+    "section": "",
+    "text": "Licenciatura: Actuaría y Ciencia de Datos"
+  },
+  {
+    "objectID": "index.html#universidad-michoacana-de-san-nicolás-de-hidalgo",
+    "href": "index.html#universidad-michoacana-de-san-nicolás-de-hidalgo",
+    "title": "Interés Compuesto - Equipo 5",
+    "section": "",
+    "text": "Licenciatura: Actuaría y Ciencia de Datos"
+  },
+  {
+    "objectID": "index.html#integrantes",
+    "href": "index.html#integrantes",
+    "title": "Interés Compuesto - Equipo 5",
+    "section": "Integrantes",
+    "text": "Integrantes\nAlessandro Zavala Solis 2122013h@umich.mx Miguel Ángel Chávez Arreola 2408845d@umich.mx Ángel Gabriel Ramos Mendoza 2123262e@umich.mx Adair Chávez Servín 2408824@umich.mx Yoshua Anaya Bedolla 2408848x@umich.mx"
+  },
+  {
+    "objectID": "index.html#descargar-pdf",
+    "href": "index.html#descargar-pdf",
+    "title": "Interés Compuesto - Equipo 5",
+    "section": "📄 Descargar PDF",
+    "text": "📄 Descargar PDF\nHaz clic aquí para descargar el PDF"
+  },
+  {
+    "objectID": "index.html#versión-r",
+    "href": "index.html#versión-r",
+    "title": "Interés Compuesto - Equipo 5",
+    "section": "Versión R",
+    "text": "Versión R\nLa función permite calcular cualquiera de las siguientes variables según cuál falte:\n\nValor actual (va)\n\nValor futuro (vf)\n\nTasa del periodo (r)\n\nNúmero de periodos (n)\n\ninteresCompuesto = function(va = NULL, vf = NULL, r = NULL, n = NULL) { # Contar cuántos parámetros son NULL (faltantes) parametros_faltantes = sum(sapply(list(va, vf, r, n), is.null))\n# Validar que falte exactamente 1 parámetro\nif (parametros_faltantes != 1) {\n    return(\"Error: Debes proporcionar exactamente 3 de los 4 parámetros\")\n}\n\n# Calcular valor futuro\nif (is.null(vf)) {\n    resultado = va * (1 + r) ^ n\n    return(round(resultado, 2))\n}\n\n# Calcular valor actual\nif (is.null(va)) {\n    resultado = vf / ((1 + r) ^ n)\n    return(round(resultado, 2))\n}\n\n# Calcular tasa de interés\nif (is.null(r)) {\n    resultado = (vf / va) ^ (1 / n) - 1\n    return(round(resultado, 4))\n}\n\n# Calcular número de periodos\nif (is.null(n)) {\n    resultado = log(vf / va) / log(1 + r)\n    return(round(resultado, 2))\n}\n}"
+  }
+]
